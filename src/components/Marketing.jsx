@@ -17,7 +17,7 @@ const Marketing = () => {
 
     return (
         <div className="container mt-4">
-            <h2>Data Penjualan</h2>
+            <h4>Data Penjualan</h4>
             <Table striped bordered hover>
                 <thead>
                     <tr>

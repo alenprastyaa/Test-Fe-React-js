@@ -17,7 +17,7 @@ const Penjual = () => {
 
     return (
         <div className="container mt-4">
-            <h2>Data Penjual</h2>
+            <h4>Data Penjual</h4>
             <Table striped bordered hover>
                 <thead>
                     <tr>

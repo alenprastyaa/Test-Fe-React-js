@@ -7,23 +7,19 @@ function Navbars() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand href="/">Admin Marketing</Navbar.Brand>
+                {/* <Navbar.Brand href="/">ADMIN </Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/penjual">Penjual</Nav.Link>
                         <Nav.Link href="/marketing">Penjualan</Nav.Link>
                         <Nav.Link href="/komisi">Komisi</Nav.Link>
-                        <NavDropdown title="Credit Payment" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/list-payment">List Payment</NavDropdown.Item>
+                        <NavDropdown title="Pembayaran" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/list-payment">Histori Pembayaran</NavDropdown.Item>
                             <NavDropdown.Item href="/add-payment">
-                                Add Payment
+                                Tambah Pembayaran
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
+
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

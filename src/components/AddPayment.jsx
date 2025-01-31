@@ -47,11 +47,11 @@ const InstallmentPayment = () => {
 
     return (
         <Container className="mt-4">
-            <h2>Installment Payment</h2>
+            <h4>Pembayaran Berangsur</h4>
             {message && <Alert variant={message.type}>{message.text}</Alert>}
             <div className="mb-3">
                 <Form.Select value={transactionId} onChange={(e) => setTransactionId(e.target.value)}>
-                    <option value="">Select Transaction</option>
+                    <option value="">Pilih Transaksi Kode Pembayaran</option>
                     {transactions.map((transaction) => (
                         <option key={transaction.id} value={transaction.id}>
                             {transaction.transaction_number} - {transaction.id}
@@ -59,7 +59,7 @@ const InstallmentPayment = () => {
                     ))}
                 </Form.Select>
             </div>
-            <Button variant="primary" onClick={handlePayment}>Pay Installment</Button>
+            <Button variant="success" onClick={handlePayment}>Bayar Angsuran</Button>
             <Table striped bordered hover className="mt-3">
                 <thead>
                     <tr>

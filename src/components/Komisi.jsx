@@ -17,7 +17,7 @@ const Komisi = () => {
 
     return (
         <div className="container mt-4">
-            <h2>Data Komisi</h2>
+            <h4>Data Komisi</h4>
             <Table striped bordered hover>
                 <thead>
                     <tr>

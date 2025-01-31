@@ -18,7 +18,7 @@ const ListPayment = () => {
 
     return (
         <Container>
-            <h2 className="my-4">List of Payments</h2>
+            <h4 className="my-4">Histori Pembayaran</h4>
             <Table striped bordered hover>
                 <thead>
                     <tr>
