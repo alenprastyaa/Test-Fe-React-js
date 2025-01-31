@@ -1,8 +1,8 @@
 Panduan Instalasi dan Penggunaan Aplikasi Node.js & React.js
 1. Persyaratan Sistem
 Pastikan Anda telah menginstal:
-•	Node.js (Disarankan versi terbaru) -> Download di sini
-•	MySQL (Untuk database) -> Download di sini
+•	Node.js (Disarankan versi terbaru) 
+•	MySQL (Untuk database) 
  
 2. Instalasi Backend (Node.js + Express)
 1.	Clone Repository
