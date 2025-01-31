@@ -45,12 +45,6 @@ const InstallmentPayment = () => {
         }
     };
 
-    // Gabungkan data transaksi dengan penjual untuk tampilan
-    const getTransactionSellerName = (sellerId) => {
-        const seller = sellers.find(seller => seller.id === sellerId);
-        return seller ? seller.name : "Unknown Seller";
-    };
-
     return (
         <Container className="mt-4">
             <h2>Installment Payment</h2>
@@ -59,7 +53,9 @@ const InstallmentPayment = () => {
                 <Form.Select value={transactionId} onChange={(e) => setTransactionId(e.target.value)}>
                     <option value="">Select Transaction</option>
                     {transactions.map((transaction) => (
-                        <option key={transaction.id} value={transaction.id}>{transaction.id}</option>
+                        <option key={transaction.id} value={transaction.id}>
+                            {transaction.transaction_number} - {transaction.id}
+                        </option>
                     ))}
                 </Form.Select>
             </div>
@@ -68,6 +64,7 @@ const InstallmentPayment = () => {
                 <thead>
                     <tr>
                         <th>#</th>
+                        <th>Transaction Number</th>
                         <th>Transaction ID</th>
                         <th>Installment Number</th>
                         <th>Amount Paid</th>
@@ -76,20 +73,25 @@ const InstallmentPayment = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {payments.map((payment, index) => (
-                        <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{payment.transaction_id}</td>
-                            <td>{payment.installment_number}</td>
-                            <td>{payment.amount_paid}</td>
-                            <td>{payment.remaining_balance}</td>
-                            <td>{payment.status}</td>
-                        </tr>
-                    ))}
+                    {payments.map((payment, index) => {
+                        const transaction = transactions.find(t => t.id === payment.transaction_id);
+                        return (
+                            <tr key={index}>
+                                <td>{index + 1}</td>
+                                <td>{transaction ? transaction.transaction_number : '-'}</td>
+                                <td>{payment.transaction_id}</td>
+                                <td>{payment.installment_number}</td>
+                                <td>{payment.amount_paid}</td>
+                                <td>{payment.remaining_balance}</td>
+                                <td>{payment.status}</td>
+                            </tr>
+                        );
+                    })}
                 </tbody>
             </Table>
         </Container>
     );
+
 };
 
 export default InstallmentPayment;
