@@ -42,4 +42,3 @@ Aplikasi akan berjalan di http://localhost:3000
 •	Pastikan MySQL berjalan sebelum menjalankan backend.
 •	Jika terjadi error, pastikan dependensi sudah terinstal dengan benar.
 •	Untuk pengelolaan database, gunakan tools seperti phpMyAdmin atau MySQL Workbench.
-![image](https://github.com/user-attachments/assets/e5d41f0d-50a1-4028-8a68-844142605735)
