@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 31, 2025 at 08:49 AM
+-- Generation Time: Feb 01, 2025 at 06:44 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -61,16 +61,12 @@ CREATE TABLE `table_pembayaran` (
 --
 
 INSERT INTO `table_pembayaran` (`id`, `transaction_id`, `payment_date`, `amount_paid`, `remaining_balance`, `status`) VALUES
-(1, 13, '2025-01-31', 25000, 2975000, 'BELUM_LUNAS'),
-(2, 13, '2025-01-31', 250000, 2725000, 'BELUM_LUNAS'),
-(3, 13, '2025-01-31', 250000, 2475000, 'BELUM_LUNAS'),
-(4, 24, '2025-01-31', 10833333, 119166667, 'BELUM_LUNAS'),
-(5, 18, '2025-01-31', 3666667, 40333333, 'BELUM_LUNAS'),
-(6, 20, '2025-01-31', 7083333, 77916667, 'BELUM_LUNAS'),
-(7, 15, '2025-01-31', 5416667, 59583333, 'BELUM_LUNAS'),
-(8, 13, '2025-01-31', 250000, 2225000, 'BELUM_LUNAS'),
-(9, 24, '2025-01-31', 10833333, 108333334, 'BELUM_LUNAS'),
-(10, 20, '2025-01-31', 7083333, 70833334, 'BELUM_LUNAS');
+(15, 13, '2025-02-01', 250000, 2750000, 'BELUM_LUNAS'),
+(16, 14, '2025-02-01', 26667, 293333, 'BELUM_LUNAS'),
+(17, 14, '2025-02-01', 26667, 266666, 'BELUM_LUNAS'),
+(18, 14, '2025-02-01', 26667, 239999, 'BELUM_LUNAS'),
+(19, 16, '2025-02-01', 5833333, 64166667, 'BELUM_LUNAS'),
+(20, 18, '2025-02-01', 3666667, 40333333, 'BELUM_LUNAS');
 
 -- --------------------------------------------------------
 
@@ -144,7 +140,7 @@ ALTER TABLE `table_marketing`
 -- AUTO_INCREMENT for table `table_pembayaran`
 --
 ALTER TABLE `table_pembayaran`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `table_penjualan`
