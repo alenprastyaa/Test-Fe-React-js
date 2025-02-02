@@ -52,7 +52,7 @@ const InstallmentPayment = () => {
                     <option value="">Pilih Transaksi Kode Pembayaran</option>
                     {transactions.map((transaction) => (
                         <option key={transaction.id} value={transaction.id}>
-                            {transaction.transaction_number} - {transaction.id} - {transaction.amount_paid}
+                            {transaction.transaction_number}
                         </option>
                     ))}
                 </Form.Select>
